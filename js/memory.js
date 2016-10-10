@@ -2,7 +2,12 @@ function Memory(name) {
   this.name = name;
 }
 
-Memory.prototype.setUp = function() {
+Memory.prototype.checkMatch = function(cardOne, cardTwo) {
+  if (cardOne === cardTwo) {
+    return true;
+  } else {
+    return false;
+  }
   
 };
 
