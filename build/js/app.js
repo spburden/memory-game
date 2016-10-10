@@ -4,12 +4,20 @@ function Memory(name) {
 }
 
 Memory.prototype.setUp = function() {
-
+  
 };
 
 exports.memoryModule = Memory;
 
 },{}],2:[function(require,module,exports){
 var Memory = require('./../js/memory.js').memoryModule;
+
+$(document).ready(function(){
+    $("#1").click(function(){
+      debugger;
+      var clickOne = $('.1').val();
+      alert (clickOne);
+    });
+});
 
 },{"./../js/memory.js":1}]},{},[2]);
